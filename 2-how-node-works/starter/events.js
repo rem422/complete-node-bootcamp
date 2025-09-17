@@ -28,22 +28,22 @@ myEmitter.emit('newSale', 9);
 const server = http.createServer();
 
 server.on('request', (req, res) => {
-    console.log('Request recieved!');
-    res.end('Request recieved!');
-    console.log(req.url);
+    console.log('Request recieved!')
+    res.end('Request recieved!')
+    console.log(req.url)
 });
 
 server.on('request', (req, res) => {
-    res.end('Another request');
+    res.end('Another request')
 });
 
 server.on('close', () => {
-    console.log('Server closed');
+    console.log('Server closed')
 });
 
 server.listen(8000, "127.0.0.1", () => {
     console.log('Server is running on http://localhost:8000')
-    console.log('Waiting for requests...');
+    console.log('Waiting for requests...')
 });
 
 
