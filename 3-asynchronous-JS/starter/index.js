@@ -12,6 +12,6 @@ fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
         fs.writeFile('dog-image.txt', res.body.message, (err) => {
             if(err) return console.log(err.message);
             console.log('Random dog image saved to file!');
-        })
+        });
     });
 });
